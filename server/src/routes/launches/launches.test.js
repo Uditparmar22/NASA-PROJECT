@@ -60,7 +60,7 @@ describe("Launches API", () => {
       expect(response.body).toMatchObject(launchDataWithoutDate);
     });
 
-    test("It should catch Missing required  property", async () => {
+    test("It should catch missing required  property", async () => {
       const response = await request(app)
         .post("/v1/launches ")
         .send(launchDataWithoutDate)
