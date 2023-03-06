@@ -3,7 +3,7 @@ const { response } = require("../../app");
 const app = require("../../app");
 const { loadPlanetsData } = require("../../models/planets.model");
 const { mongoConnect, mongoDisconnect } = require("../../services/mongo");
-const { loadPlanetsData } = require("../../models/planets.model");
+// const { loadPlanetsData } = require("../../models/planets.model");
 
 describe("Launches API", () => {
   beforeAll(async () => {
